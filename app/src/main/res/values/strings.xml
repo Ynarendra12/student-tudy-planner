@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Student Study Planner</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_documents">Docs</string>
+    <string name="title_notes">Notes</string>
+    <string name="title_profile">Profile</string>
+</resources>

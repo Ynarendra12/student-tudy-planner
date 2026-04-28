@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_tasks">
+
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.example.studentstudyplanner.ui.TasksFragment"
+        android:label="Tasks"
+        tools:layout="@layout/fragment_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_documents"
+        android:name="com.example.studentstudyplanner.ui.DocumentsFragment"
+        android:label="Documents"
+        tools:layout="@layout/fragment_documents" />
+
+    <fragment
+        android:id="@+id/navigation_notes"
+        android:name="com.example.studentstudyplanner.ui.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.studentstudyplanner.ui.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_pdf_viewer"
+        android:name="com.example.studentstudyplanner.ui.PdfViewerFragment"
+        android:label="Document Reader">
+        <argument
+            android:name="filePath"
+            app:argType="string" />
+    </fragment>
+</navigation>
